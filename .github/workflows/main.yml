@@ -26,5 +26,5 @@ jobs:
        with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: Someone stars **${{env.REPO_NAME}}** repository, see [here](${{env.GITHUB_SERVER_URL}}/${{env.GITHUB_REPOSITORY}}).
+          message: Someone stars **${{env.REPO_NAME}}** repository, see [here](${{GITHUB_SERVER_URL}}/${{GITHUB_REPOSITORY}}).
           format: markdown
