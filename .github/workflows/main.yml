@@ -25,5 +25,5 @@ jobs:
        with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: Someone stars alfred-workflows repository, see [here](https://github.com/alanhg/alfred-workflows).
+          message: Someone stars others-note repository, see [here](https://github.com/alanhg/others-note).
           format: markdown
