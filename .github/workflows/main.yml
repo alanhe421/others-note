@@ -10,8 +10,6 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-env:
-  REPO_NAME: ${{ github.event.repository.name }}
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -23,6 +21,8 @@ jobs:
     steps:
      - name: Notify
        uses: appleboy/telegram-action@master
+       env:
+         REPO_NAME: ${{ github.event.repository.name }}
        with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
